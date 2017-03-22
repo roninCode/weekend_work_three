@@ -3,7 +3,14 @@
 # the first string, and false otherwise.
 
 def mutation?(base_word, mutation)
-
+  #mutation must have all base_words
+  base = base_word.split("").sort
+  mut = mutation.split("").sort
+  if base == mut
+    true
+  else
+    false
+  end
 end
 
 # Driver code - don't touch anything below this line.

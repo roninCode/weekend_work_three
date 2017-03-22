@@ -3,7 +3,12 @@
 # numbers, inclusive.
 
 def sum_of_range(array)
-
+first = array.min 
+last = array.max
+all_numbers = (first..last).to_a
+  all_numbers.reduce do |sum, num|
+    sum += num
+  end
 end
 
 # Driver code - don't touch anything below this line.
